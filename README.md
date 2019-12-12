@@ -21,8 +21,8 @@ Cell **statistics** (expression mean and std.dev) are calculated on subsets defi
 
 Expression **fold-changes** computed between subsets of the pairs of age groups are filtered as  
 - Subset has >= 3 cells
-- Mean count are >= 4 max(std. dev) apart
-- RNA percentage is >= 1e-12 in both age groups
+- Mean expression values are >= 4 max(std. dev) apart
+- Expression is >= 1e-12 in both age groups
 
 Here're the largest 20 fold-changes.  
 Columns are: tissue, subtissue, cell type, gene
