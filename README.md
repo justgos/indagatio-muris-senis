@@ -25,9 +25,9 @@ Expression **fold-changes** computed between subsets of the pairs of age groups 
 - Expression is >= 1e-12 in both age groups
 - Bonferroni correction is applied to p-values by multiplying them first by the number of genes (~20k) and then by the number of subsets (2-1000 depending on granularity). Results are then thresholded by 1e-5
 
-Here're the largest 20 fold-changes.  
+<!-- Here're the largest 20 fold-changes.  
 Columns are: tissue, subtissue, cell type, gene
-![](./docs/dexpression.png)
+![](./docs/dexpression.png) -->
 
 All the results for different analysis granularity levels:
 - [results/merged-cell_ontology_class.csv](./results/merged-cell_ontology_class.csv)  
