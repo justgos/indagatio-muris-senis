@@ -21,7 +21,6 @@ Cell **statistics** (expression mean and std.dev) are calculated - with 4 levels
 
 Expression **fold-changes** computed between subsets of the pairs of age groups are filtered as  
 - Subset has >= 3 cells
-<!-- - Mean expression values are >= 4 max(std. dev) apart -->
 - Expression is >= 1e-12 in both age groups
 - Bonferroni correction is applied to p-values by multiplying them first by the number of genes (~20k) and then by the number of subsets (2-1000 depending on granularity). Results are then thresholded by 1e-5
 
@@ -29,9 +28,14 @@ Expression **fold-changes** computed between subsets of the pairs of age groups 
 Columns are: tissue, subtissue, cell type, gene
 ![](./docs/dexpression.png) -->
 
+Notebooks
+- [cognitis.ipynb](./cognitis.ipynb) - exploration + systematic analisys of expression fold-changes
+- [videns.ipynb](./videns.ipynb) - preparation of additional pathway data for visualization
+
 All the results for different analysis granularity levels:
 - [results/merged-cell_ontology_class.csv](./results/merged-cell_ontology_class.csv)  
 - [results/merged-subtissue.csv](./results/merged-subtissue.csv)  
 - [results/merged-tissue.csv](./results/merged-tissue.csv)  
 - [results/merged-sex.csv](./results/merged-sex.csv)  
+- [results/merged.csv](./results/merged.csv) - total merge across all the granularities  
 <!-- All of them are marked as _low_ confidence as the expression means were only between 4 to 5 max(std. dev) apart -->
