@@ -29,8 +29,8 @@ Columns are: tissue, subtissue, cell type, gene
 ![](./docs/dexpression.png) -->
 
 Notebooks
-- [cognitis.ipynb](./cognitis.ipynb) - exploration + systematic analisys of expression fold-changes
-- [videns.ipynb](./videns.ipynb) - preparation of additional pathway data for visualization
+- [cognitis.ipynb](./cognitis.ipynb) - exploration + systematic analysis of expression fold-changes
+<!-- - [videns.ipynb](./videns.ipynb) - preparation of additional pathway data for visualization -->
 
 All the results for different analysis granularity levels:
 - [results/merged-cell_ontology_class.csv](./results/merged-cell_ontology_class.csv)  
