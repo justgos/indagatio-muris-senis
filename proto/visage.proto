@@ -5,6 +5,7 @@ message Coords {
 }
 
 message CellMetadata {
+  string sex = 4;
   string age = 5;
   string tissue = 6;
   string subtissue = 7;
