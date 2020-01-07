@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x12proto/visage.proto\"\x18\n\x06\x43oords\x12\x0e\n\x06values\x18\x01 \x03(\x02\"h\n\x0c\x43\x65llMetadata\x12\x0b\n\x03sex\x18\x04 \x01(\t\x12\x0b\n\x03\x61ge\x18\x05 \x01(\t\x12\x0e\n\x06tissue\x18\x06 \x01(\t\x12\x11\n\tsubtissue\x18\x07 \x01(\t\x12\x1b\n\x13\x63\x65ll_ontology_class\x18\x08 \x01(\t\"-\n\rCellsMetadata\x12\x1c\n\x05\x63\x65lls\x18\x01 \x03(\x0b\x32\r.CellMetadatab\x06proto3'
+  serialized_pb=b'\n\x12proto/visage.proto\"\x18\n\x06\x43oords\x12\x0e\n\x06values\x18\x01 \x03(\x02\"\x1a\n\x08\x41\x63tivity\x12\x0e\n\x06values\x18\x01 \x03(\x05\"h\n\x0c\x43\x65llMetadata\x12\x0b\n\x03sex\x18\x04 \x01(\x05\x12\x0b\n\x03\x61ge\x18\x05 \x01(\x05\x12\x0e\n\x06tissue\x18\x06 \x01(\x05\x12\x11\n\tsubtissue\x18\x07 \x01(\x05\x12\x1b\n\x13\x63\x65ll_ontology_class\x18\x08 \x01(\x05\"\xbc\x01\n\rCellsMetadata\x12\x1c\n\x05\x63\x65lls\x18\x01 \x03(\x0b\x32\r.CellMetadata\x12\x11\n\tsex_vocab\x18\n \x03(\t\x12\x11\n\tage_vocab\x18\x0b \x03(\t\x12\x14\n\x0ctissue_vocab\x18\x0c \x03(\t\x12\x17\n\x0fsubtissue_vocab\x18\r \x03(\t\x12!\n\x19\x63\x65ll_ontology_class_vocab\x18\x0e \x03(\t\x12\x15\n\rgo_activities\x18\x14 \x03(\tb\x06proto3'
 )
 
 
@@ -55,45 +55,17 @@ _COORDS = _descriptor.Descriptor(
 )
 
 
-_CELLMETADATA = _descriptor.Descriptor(
-  name='CellMetadata',
-  full_name='CellMetadata',
+_ACTIVITY = _descriptor.Descriptor(
+  name='Activity',
+  full_name='Activity',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='sex', full_name='CellMetadata.sex', index=0,
-      number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='age', full_name='CellMetadata.age', index=1,
-      number=5, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='tissue', full_name='CellMetadata.tissue', index=2,
-      number=6, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='subtissue', full_name='CellMetadata.subtissue', index=3,
-      number=7, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='cell_ontology_class', full_name='CellMetadata.cell_ontology_class', index=4,
-      number=8, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
+      name='values', full_name='Activity.values', index=0,
+      number=1, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -110,7 +82,66 @@ _CELLMETADATA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=48,
-  serialized_end=152,
+  serialized_end=74,
+)
+
+
+_CELLMETADATA = _descriptor.Descriptor(
+  name='CellMetadata',
+  full_name='CellMetadata',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sex', full_name='CellMetadata.sex', index=0,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='age', full_name='CellMetadata.age', index=1,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='tissue', full_name='CellMetadata.tissue', index=2,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='subtissue', full_name='CellMetadata.subtissue', index=3,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cell_ontology_class', full_name='CellMetadata.cell_ontology_class', index=4,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=76,
+  serialized_end=180,
 )
 
 
@@ -128,6 +159,48 @@ _CELLSMETADATA = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='sex_vocab', full_name='CellsMetadata.sex_vocab', index=1,
+      number=10, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='age_vocab', full_name='CellsMetadata.age_vocab', index=2,
+      number=11, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='tissue_vocab', full_name='CellsMetadata.tissue_vocab', index=3,
+      number=12, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='subtissue_vocab', full_name='CellsMetadata.subtissue_vocab', index=4,
+      number=13, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cell_ontology_class_vocab', full_name='CellsMetadata.cell_ontology_class_vocab', index=5,
+      number=14, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='go_activities', full_name='CellsMetadata.go_activities', index=6,
+      number=20, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -140,12 +213,13 @@ _CELLSMETADATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=154,
-  serialized_end=199,
+  serialized_start=183,
+  serialized_end=371,
 )
 
 _CELLSMETADATA.fields_by_name['cells'].message_type = _CELLMETADATA
 DESCRIPTOR.message_types_by_name['Coords'] = _COORDS
+DESCRIPTOR.message_types_by_name['Activity'] = _ACTIVITY
 DESCRIPTOR.message_types_by_name['CellMetadata'] = _CELLMETADATA
 DESCRIPTOR.message_types_by_name['CellsMetadata'] = _CELLSMETADATA
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -156,6 +230,13 @@ Coords = _reflection.GeneratedProtocolMessageType('Coords', (_message.Message,),
   # @@protoc_insertion_point(class_scope:Coords)
   })
 _sym_db.RegisterMessage(Coords)
+
+Activity = _reflection.GeneratedProtocolMessageType('Activity', (_message.Message,), {
+  'DESCRIPTOR' : _ACTIVITY,
+  '__module__' : 'proto.visage_pb2'
+  # @@protoc_insertion_point(class_scope:Activity)
+  })
+_sym_db.RegisterMessage(Activity)
 
 CellMetadata = _reflection.GeneratedProtocolMessageType('CellMetadata', (_message.Message,), {
   'DESCRIPTOR' : _CELLMETADATA,
