@@ -1,9 +1,12 @@
 # Exploration of the Mus Musculus aging dynamics
-On the [Tabula Muris Senis](https://github.com/czbiohub/tabula-muris-senis) dataset.  
+Done on the [Tabula Muris Senis](https://github.com/czbiohub/tabula-muris-senis) dataset.  
 Data is raw RNA-seq counts from
 ```
 https://czb-tabula-muris-senis.s3-us-west-2.amazonaws.com/Data-objects/tabula-muris-senis-facs-official-raw-obj.h5ad
 ```
+
+Visualization of the result can be found at [https://gos.garden/vis-age/](https://gos.garden/vis-age/)  
+The visualization code - in [https://github.com/justgos/vis-age](https://github.com/justgos/vis-age)
 
 <!-- Gene annotations are from
 ```
@@ -30,7 +33,7 @@ Columns are: tissue, subtissue, cell type, gene
 
 Notebooks
 - [cognitis.ipynb](./cognitis.ipynb) - exploration + systematic analysis of expression fold-changes
-<!-- - [videns.ipynb](./videns.ipynb) - preparation of additional pathway data for visualization -->
+- [videns.ipynb](./videns.ipynb) - preparation of additional pathway data for visualization
 
 All the results for different analysis granularity levels:
 - [results/merged-cell_ontology_class.csv](./results/merged-cell_ontology_class.csv)  
